@@ -42,10 +42,48 @@ h6 {
 }
 
 
+/* CLASES DE FULLPAGE.JS */
+
+#fp-nav ul li a span {
+    background: orange;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: orange;
+    font-size: 20px;
+}
+
+
+/* MENÚ DE NAVEGACIÓN */
+
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0px;
+    padding: 10px 20px;
+}
+
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    color: orange;
+    transition: .5s ease;
+}
+
+
 /* HEADER */
 
 .header {
-    background-image: url('../media/bg2.jpg');
+    background-image: url('../media/bg5.jpg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -86,6 +124,27 @@ h6 {
     background-position: center;
     background-size: contain;
     object-fit: cover;
+}
+
+
+/* BORDE DE ENECLAE ACTIVO */
+
+.nav li.active {
+    border-bottom: solid 2px orange;
+}
+
+.menu li a {
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* MARACR ENLACE ACTIVO */
+
+#menu li.active a {
+    color: #fff;
+    font-style: italic;
 }
 
 
