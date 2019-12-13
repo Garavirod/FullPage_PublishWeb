@@ -25,4 +25,16 @@ const seccionesPagina = new fullpage('#fullpage', {
     // ──────────────────────────────────────────────────
     sectionsColor: ['#000', '#c2c2c2', '#000'], // Color de fondo de cada seccion.
     verticalCentered: true, // Si alineara de forma vertical los contenidos de cada seccion.
+
+    // ──────────────────────────────────────────────────
+    //   :::::: Slides
+    // ──────────────────────────────────────────────────
+    controlArrows: true, // Flechas del slide
+    slidesNavigation: false, // Indicadores del slide
+    afterLoad: function(origin, destination) { //This function is goint to execute when the section get load
+        if (destination.anchor == 'contacto') {
+            document.querySelector('.footer h2').style.opacity = 1;
+
+        }
+    }
 });
