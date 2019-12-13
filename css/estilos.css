@@ -161,3 +161,75 @@ h6 {
         transform: translateY(20px);
     }
 }
+
+
+/* PRODUCTOS */
+
+.productos article {
+    background-position: center;
+    background-size: cover;
+}
+
+.productos article:nth-child(1) {
+    background-image: url('../media/bg3.jpg');
+}
+
+.productos article:nth-child(2) {
+    background-image: url('../media/bg2.jpg');
+}
+
+.productos article:nth-child(3) {
+    background-image: url('../media/producto-01.jpg');
+}
+
+.productos .informacion-producto {
+    margin: 0 30px
+}
+
+.productos .informacion-producto::before {
+    content: "";
+    height: 50px;
+    width: 2px;
+    display: inline-block;
+    background: orange;
+    position: absolute;
+    top: 50%;
+    margin: -10px;
+}
+
+.productos .modelo {
+    font-size: 45px;
+}
+
+.productos .descripcion {
+    font-size: 22px;
+}
+
+.productos .precio {
+    font-size: 25px;
+}
+
+.productos .precio::before {
+    content: "$";
+    display: inline-block;
+}
+
+
+/* CLASES DE FULL PAGE FLECHAS SLIDE */
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    top: 95%;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 80%;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent orange transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+    right: 50px;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent orange;
+}
