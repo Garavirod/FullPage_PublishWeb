@@ -306,3 +306,84 @@ h6 {
 .footer .instagram:hover i {
     color: #fff;
 }
+
+
+/* RESPONISIVE DESIGN */
+
+@media screen and (max-width:768px) {
+    .menu li a,
+    .menu li.active a {
+        font-size: 28px;
+    }
+    .modelo {
+        font-size: 40px;
+    }
+    .precio {
+        font-size: 23px;
+    }
+    .footer h2 {
+        font-size: 15px;
+    }
+    .footer .redes-sociales {
+        font-size: 30px;
+    }
+    .footer .redes-sociales a {
+        width: 70px;
+        height: 70px;
+    }
+    .footer .texto-naranja {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .header .titulo {
+        font-size: 60px;
+    }
+    .informacion-producto {
+        position: absolute;
+        top: 70%;
+    }
+    .fp-controlArrow.fp-next {
+        left: 100px;
+    }
+    .fp-controlArrow.fp-prev {
+        left: 25px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .nav {
+        display: block;
+        text-align: center;
+    }
+    .nav a {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu li a,
+    .menu li.active a {
+        font-size: 15px;
+        padding: 5px;
+    }
+    .titulo {
+        font-size: 45px;
+    }
+    .productos .modelo {
+        font-size: 30px;
+    }
+    .footer .texto-naranja {
+        font-size: 18px;
+    }
+    .footer .redes-sociales a {
+        width: 50px;
+        height: 50px;
+    }
+    .footer .redes-sociales a i {
+        font-size: 18px;
+    }
+}
