@@ -179,7 +179,12 @@ h6 {
 }
 
 .productos article:nth-child(3) {
-    background-image: url('../media/producto-01.jpg');
+    background-image: url('../media/bg6.jpg');
+}
+
+.productos article:nth-child(4) {
+    background-image: url('../media/bg7.jpg');
+    background-position: top;
 }
 
 .productos .informacion-producto {
